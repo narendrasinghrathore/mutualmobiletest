@@ -1,0 +1,24 @@
+<main>
+  <mat-form-field class="full-width">
+    <mat-label>Search Restaurant </mat-label>
+    <input matInput placeholder="Ex. Pizza" (keyup)="searchList($event)" />
+  </mat-form-field>
+  <section>
+    <ng-template [ngIf]="loading">
+      <mat-spinner></mat-spinner>
+    </ng-template>
+    <ng-container *ngIf="list.length === 0">
+      <h3>
+        No data, please check your internet connection or try to refresh the page.
+      </h3>
+    </ng-container>
+    <ng-container *ngFor="let item of list">
+      <mat-card class="card">
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>Timings: {{ item.time }}</mat-card-subtitle>
+        <mat-card-content>Content</mat-card-content>
+        <mat-card-actions>Actions</mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </section>
+</main>
