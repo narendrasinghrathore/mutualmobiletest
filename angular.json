@@ -93,10 +93,7 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-=======
->>>>>>> 43dbc64676cf2aa21877817347cb155c28c951e9
               "src/styles.scss"
             ],
             "scripts": []
@@ -128,13 +125,7 @@
           }
         }
       }
-<<<<<<< HEAD
     }
   },
   "defaultProject": "mutualmobiletest"
 }
-=======
-    }},
-  "defaultProject": "mutualmobiletest"
-}
->>>>>>> 43dbc64676cf2aa21877817347cb155c28c951e9
